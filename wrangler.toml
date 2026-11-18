@@ -1,0 +1,13 @@
+name = "kedleston-m365-graph-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GRAPH_BASE_URL = "https://<scrubbed-url-domain>/v1.0"
+WRITE_ENABLED = "false"
+ALLOWED_TENANT_ID = "REPLACE_WITH_TENANT_ID"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
